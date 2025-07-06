@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import './App.css';
 import HomePage from './pages/HomePage';
 import DashboardPage from './pages/DashboardPage';
@@ -47,6 +48,7 @@ export default function App() {
   return (
     <div className="App">
       {renderPage()}
+      <Analytics />
     </div>
   );
 } 
